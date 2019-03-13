@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.aop'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile('org.springframework:spring-core:5.0.6.RELEASE')
+    compile('org.springframework:spring-context:5.0.6.RELEASE')
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: '1.5.10.RELEASE'
+}
